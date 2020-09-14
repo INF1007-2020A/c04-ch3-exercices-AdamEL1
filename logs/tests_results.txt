@@ -1,10 +1,25 @@
 test_average (__main__.TestExercice) ... ok
-test_square (__main__.TestExercice) ... ok
+test_square (__main__.TestExercice) ... FAIL
 test_square_root (__main__.TestExercice) ... ok
 test_to_celsius (__main__.TestExercice) ... FAIL
 test_to_degrees (__main__.TestExercice) ... FAIL
 test_to_farenheit (__main__.TestExercice) ... FAIL
 test_to_radians (__main__.TestExercice) ... ok
+
+======================================================================
+FAIL: test_square (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 34, in test_square
+    'Mauvais calcul du carré'
+AssertionError: Lists differ: [12, 200, 20] != [144, 40000, 400]
+
+First differing element 0:
+12
+144
+
+- [12, 200, 20]
++ [144, 40000, 400] : Mauvais calcul du carré
 
 ======================================================================
 FAIL: test_to_celsius (__main__.TestExercice)
@@ -63,4 +78,4 @@ First differing element 2:
 ----------------------------------------------------------------------
 Ran 7 tests in 0.002s
 
-FAILED (failures=3)
+FAILED (failures=4)
